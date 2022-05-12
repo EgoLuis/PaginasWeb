@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- la etiqueta DOCTYPE le dice que verisón de html se usa para ayudar a los navegadores, siempre va -->
+
+<html lang="en">
+  <!-- la etiqueta html engloba todo el documento, nada debe ir por fuera -->
+
+  <head>
+    <!-- dentro de la etiqueta head van los metadatos de la pw, estos datos no son visuales en la web -->
+    <!-- solo hay una etiqueta head y una body -->
+
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <!-- define el conjunto de caracteres que se pueden usar, utf-8 sirve para el español -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- define la version del explorador que debe usarse para mostar la pw -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- escala la pw al tamaño del dispositivo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- enlaza la hoja css para el estilo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--  -->
+
+  <body>
+    <header>
+      <!-- todo lo visible en la pw va dentro de la etiqueta body -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mapa">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercade.html">Acerca de</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="cover d-flex justify-content-end align-items-start flex-column p-5"
+        style="
+          background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_1liam-martens-fyi77wfzoeg-unsplash.jpg?v=1652371131290);
+        "
+      >
+        <h1>FacilitoCoffee</h1>
+        <p>El mejor café de la ciudad</p>
+        <button class="btn btn-primary">Conoce más</button>
+      </div>
+    </header>
+    <section>
+      <div class="container mt-5 mb-5">
+        <img
+          src="https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_bradley-pisney-d1wgcyc_hww-unsplash.jpg?v=1652372896261"
+          alt="bartender preparando bebidas"
+          height="300"
+          class="float-end mt-1 ms-2"
+        />
+      </div>
+      <div class="contaner mt-5 ms-5">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          dapibus libero nec ligula auctor, eget tempor tortor sodales. Donec
+          dictum egestas pretium. Ut libero velit, imperdiet ac interdum vel,
+          tincidunt at elit. Fusce vitae enim posuere sem aliquet congue ut id
+          ante. Donec sit amet vestibulum ipsum. Duis vitae metus tortor. Nam ut
+          orci erat. Aenean turpis est, hendrerit ac mi quis, finibus feugiat
+          lectus. Vestibulum quis ultricies urna. Phasellus ut porta enim.
+          Vivamus sit amet quam sed arcu molestie accumsan. Duis pulvinar, eros
+          non maximus faucibus, nunc dolor facilisis orci, vitae auctor ligula
+          ante eget quam. Mauris malesuada pharetra lorem, eget aliquet urna
+          consequat dignissim.
+        </p>
+        <p>
+          Etiam massa dolor, ullamcorper sit amet mi ac, posuere ullamcorper
+          lorem. Pellentesque scelerisque, lorem vel iaculis luctus, tortor
+          tortor dapibus velit, sed malesuada nibh tellus id nunc. Ut eleifend
+          risus eget dolor ultricies elementum. Cras tincidunt turpis arcu, et
+          fringilla justo elementum quis. Duis volutpat sem eu sagittis
+          pellentesque. Nulla facilisi. Aenean nulla sapien, finibus non
+          venenatis quis, vehicula sit amet orci. Duis nibh quam, bibendum at
+          dictum eu, consequat et ipsum. Quisque nisi nulla, semper quis risus
+          vitae, consectetur tincidunt dui. Class aptent taciti sociosqu ad
+          litora torquent per conubia nostra, per inceptos himenaeos.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="slider">
+          <div class="slider-container">
+            <div
+              class="image-container"
+              style="
+                background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/louis-hansel-e96ST3p7tn4-unsplash.jpg?v=1652374194935);
+              "
+              title="bartender1"
+            ></div>
+            <div
+              class="image-container"
+              style="
+                background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/ian-harber-Q4icOW5w_d0-unsplash.jpg?v=1652374194987);
+              "
+              title="bartender2"
+            ></div>
+            <div
+              class="image-container"
+              style="
+                background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/fernando-hernandez-pqtxUaGGkJo-unsplash.jpg?v=1652374195152);
+              "
+              title="bartender3"
+            ></div>
+            <div
+              class="image-container"
+              style="
+                background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/benjaminrobyn-jespersen-gGsarGszQHo-unsplash.jpg?v=1652374195171);
+              "
+              title="bartender4"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 mb-5">
+        <h2>Conoce al equipo</h2>
+        <p>Juntos hacemos que tu día inicie con una increible taza de café</p>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 mt-2">
+            <div class="card p-4 text-center">
+              <div
+                class="avatar rounded-circle inline-block"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/alex-suprun-ZHvM3XIOHoE-unsplash.jpg?v=1652381877358);
+                "
+              ></div>
+              <h4>Carlos</h4>
+              <span class="badge rounded-pill bg-primary">CEO</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mt-2">
+            <div class="card p-4 text-center">
+              <div
+                class="avatar rounded-circle inline-block"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/jake-nackos-IF9TK5Uy-KI-unsplash.jpg?v=1652381876378);
+                "
+              ></div>
+              <h4>Lidia</h4>
+              <span class="badge rounded-pill bg-primary">Manager</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mt-2">
+            <div class="card p-4 text-center">
+              <div
+                class="avatar rounded-circle inline-block"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/nicolas-horn-MTZTGvDsHFY-unsplash.jpg?v=1652381876755);
+                "
+              ></div>
+              <h4>David</h4>
+              <span class="badge rounded-pill bg-primary">Bartender</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mt-2">
+            <div class="card p-4 text-center">
+              <div
+                class="avatar rounded-circle inline-block"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/julian-wan-WNoLnJo7tS8-unsplash.jpg?v=1652381876572);
+                "
+              ></div>
+              <h4>Roberto</h4>
+              <span class="badge rounded-pill bg-primary">Bartender</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mt-2">
+            <div class="card p-4 text-center">
+              <div
+                class="avatar rounded-circle inline-block"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/may-gauthier-TACdQo62To0-unsplash.jpg?v=1652381877187);
+                "
+              ></div>
+              <h4>Alma</h4>
+              <span class="badge rounded-pill bg-primary">Cashier</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

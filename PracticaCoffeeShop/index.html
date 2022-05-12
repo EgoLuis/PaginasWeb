@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- la etiqueta DOCTYPE le dice que verisón de html se usa para ayudar a los navegadores, siempre va -->
+
+<html lang="en">
+  <!-- la etiqueta html engloba todo el documento, nada debe ir por fuera -->
+
+  <head>
+    <!-- dentro de la etiqueta head van los metadatos de la pw, estos datos no son visuales en la web -->
+    <!-- solo hay una etiqueta head y una body -->
+
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <!-- define el conjunto de caracteres que se pueden usar, utf-8 sirve para el español -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- define la version del explorador que debe usarse para mostar la pw -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- escala la pw al tamaño del dispositivo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- enlaza la hoja css para el estilo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--  -->
+
+  <body>
+    <header>
+      <!-- todo lo visible en la pw va dentro de la etiqueta body -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stripe">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mapa">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercade.html">Acerca de</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>FacilitoCoffee</h1>
+        <p>El mejor café de la ciudad</p>
+        <button class="btn btn-primary">Conoce más</button>
+      </div>
+    </header>
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div
+                title="Granos de café antes de cosecharse"
+                class="cover cover-small"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_1rodrigo-flores-nqyhyday55a-unsplash.jpg?v=1652297326396);
+                "
+              ></div>
+
+              <div class="card-body">
+                <h5 class="card-title">Cultivo ecológico responsable</h5>
+                <p class="card-text">
+                  Trabajamos con caficultores responsables que usan tratamientos
+                  ecológicos
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div
+                title="Agricultores trabajando"
+                class="cover cover-small"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_1no-one-cares-l_5mjnbrmrs-unsplash.jpg?v=1652298217114);
+                "
+              ></div>
+
+              <div class="card-body">
+                <h5 class="card-title">Comercio justo</h5>
+                <p class="card-text">
+                  Adquirir café en FacilitoCoffee significa que tu dinero va
+                  directamente y de manera responsable
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div
+                title="Presentando café terminado"
+                class="cover cover-small"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_1david-fanuel-ftkd671tbt8-unsplash.jpg?v=1652298039675);
+                "
+              ></div>
+
+              <div class="card-body">
+                <h5 class="card-title">Pasión por el café</h5>
+                <p class="card-text">
+                  Nos apasiona el café, por lo que siempre trabajamos por
+                  servirte café de calidad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-5">
+            <img
+              src="https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/CoffeeDoddle.svg?v=1652311269102"
+              alt="Una persona ilustrada abrazando una taza de café"
+            />
+          </div>
+          <div class="col-12 col-sm-6">
+            <h3>¡Inicia tu día con una taza de café!</h3>
+            <p>
+              Ordena tu bolsa de café a domicilio o busca tu FacilitoCofee más
+              cercano
+            </p>
+            <a href="#mapa">Ir al mapa</a>
+          </div>
+        </div>
+        <form action="">
+          <label for="email">Correo electrónico</label>
+          <div class="d-flex">
+            <div class="flex-fill mr-2">
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <buton type="submit" class="btn btn-primary">Enviar</buton>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- riel -->
+    <section>
+      <div class="container mt-5 mb-5" id="stripe">
+        <div class="product-stripe">
+          <div class="stripe-container">
+            <div class="card">
+              <div
+                title="Taza de americano"
+                class="cover cover-small"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_1americano.jpg?v=1652367216992);
+                "
+              ></div>
+
+              <div class="card-body">
+                <h5 class="card-title">Americano</h5>
+                <span class="badge bg-info text-dark">$1.00USD</span>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                title="Taza de capuccino"
+                class="cover cover-small"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_1capuccino.jpg?v=1652367217730);
+                "
+              ></div>
+
+              <div class="card-body">
+                <h5 class="card-title">Capuccino</h5>
+                <span class="badge bg-info text-dark">$1.50USD</span>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                title="Taza de latte"
+                class="cover cover-small"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_1latt%C3%A9.jpg?v=1652367217019);
+                "
+              ></div>
+
+              <div class="card-body">
+                <h5 class="card-title">Latte</h5>
+                <span class="badge bg-info text-dark">$1.50USD</span>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                title="Taza de expresso"
+                class="cover cover-small"
+                style="
+                  background-image: url(https://cdn.glitch.global/23b4bf5b-edbb-457a-a72a-3cfcb6085203/rsz_expresso.jpg?v=1652367216991);
+                "
+              ></div>
+
+              <div class="card-body">
+                <h5 class="card-title">Expresso</h5>
+                <span class="badge bg-info text-dark">$2.00USD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mapa -->
+    <section>
+      <div class="container mt-5 mb-5" id="mapa">
+        <h4>Aquí nos vemos:</h4>
+        <p>
+          Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 06500 Ciudad de México,
+          CDMX
+        </p>
+        <div class="responsive-iframe">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5802.786411596401!2d-99.16932387841237!3d19.42789426221903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1652369261994!5m2!1ses-419!2smx"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    
+    
+  </body>
+</html>
